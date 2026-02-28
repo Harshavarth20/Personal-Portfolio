@@ -20,18 +20,19 @@ function Hero() {
 						<span className="text-cyan-400">
 							<TypeAnimation
 								sequence={[
-									"web applications",
+									"Software Developer",
 									2000,
-									"full stack systems",
+									"Ruby Developer",
 									2000,
-									"scalable backend APIs",
+									"Frontend Web Developer",
 									2000,
-									"frontend user interfaces",
+									"Full Stack Developer",
+									2000,
+									"React Developer",
 									2000,
 								]}
 								speed={50}
 								repeat={Infinity}
-								wrapper="span"
 							/>
 						</span>
 					</h1>
