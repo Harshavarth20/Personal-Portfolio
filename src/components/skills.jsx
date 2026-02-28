@@ -1,16 +1,21 @@
 function Skills() {
 
   const skills = [
+    "HTML5",
+    "CSS3",
+    "JavaScript (ES6+)",
     "React.js",
-    "Ruby on Rails",
-    "JavaScript",
-    "PostgreSQL",
-    "REST API Development",
     "Next.js",
-    "Tailwind CSS",
-    "Git",
-    "HTML/CSS",
+    "Ruby",
+    "Ruby on Rails",
+    "PostgreSQL",
     "MySQL",
+    "REST API Development",
+    "Git",
+    "GitHub",
+    "Tailwind CSS",
+    "Responsive Web Design",
+    "API Integration",
   ];
 
   return (

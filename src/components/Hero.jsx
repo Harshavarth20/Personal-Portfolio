@@ -1,51 +1,64 @@
 import profile from "../assets/images/pic.jpeg";
+import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
 	return (
-		<section id="home" className="pt-32 pb-20">
-
+		<section id="home" className="pt-32 pb-24">
 			<div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
-				{/* Left */}
-
+				{/* Left Content */}
 				<div>
 
-					<p className="text-cyan-400 text-sm mb-10">
-						JUNIOR SOFTWARE DEVELOPER
+					{/* Role label */}
+					<p className="text-cyan-400 text-sm tracking-wider uppercase mb-6">
+						Junior Software Developer
 					</p>
 
-					<h1 className="text-4xl md:text-5xl font-semibold text-white mb-6 leading-tight">
-
-						I build scalable web applications with modern technologies and clean architecture.
-
+					{/* Main Heading */}
+					<h1 className="text-2xl md:text-6xl font-bold text-white leading-tight mb-6">
+						Open to work as a{" "}
+						<span className="text-cyan-400">
+							<TypeAnimation
+								sequence={[
+									"web applications",
+									2000,
+									"full stack systems",
+									2000,
+									"scalable backend APIs",
+									2000,
+									"frontend user interfaces",
+									2000,
+								]}
+								speed={50}
+								repeat={Infinity}
+								wrapper="span"
+							/>
+						</span>
 					</h1>
 
-					<p className="text-gray-400 mb-4 leading-relaxed">
-
+					{/* Description */}
+					<p className="text-gray-400 text-lg leading-relaxed mb-4 max-w-xl">
 						Specialized in developing full stack applications using React, Ruby on Rails,
 						PostgreSQL, and modern frontend frameworks. Focused on performance, scalability,
 						and maintainability.
-
 					</p>
 
-					<p className="text-gray-400 mb-8 leading-relaxed">
-
-						Experienced in designing REST APIs, database architecture, frontend systems,
-						and production-ready applications.
-
+					<p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-xl">
+						Experienced in designing REST APIs, database schemas, and modern frontend systems, delivering scalable and production-ready web applications.
 					</p>
 
-					<div className="flex gap-4">
+					{/* Buttons */}
+					<div className="flex flex-wrap gap-4">
 
 						<a
 							href="#projects"
 							className="
-    						px-6 py-3 rounded-md text-sm font-medium
-    						bg-white text-black
-    						hover:bg-cyan-400
-    						hover:text-black
-    						transition-all duration-300
-  							"
+                px-7 py-3 rounded-md text-sm font-semibold
+                bg-cyan-400 text-black
+                hover:bg-cyan-300
+                transition-all duration-300
+                shadow-lg hover:shadow-cyan-400/20
+              "
 						>
 							View Projects
 						</a>
@@ -54,14 +67,11 @@ function Hero() {
 							href="/resume/Harshavarth_Resume.pdf"
 							download
 							className="
-    						px-6 py-3 rounded-md text-sm font-medium
-    						border border-gray-700
-    						text-gray-300
-    						hover:bg-cyan-400
-    						hover:text-black
-    						hover:border-cyan-400
-    						transition-all duration-300
-  							"
+                px-7 py-3 rounded-md text-sm font-semibold
+                border border-gray-600 text-gray-300
+                hover:bg-cyan-400 hover:text-black hover:border-cyan-400
+                transition-all duration-300
+              "
 						>
 							Download Resume
 						</a>
@@ -70,19 +80,30 @@ function Hero() {
 
 				</div>
 
-				{/* Right */}
+				{/* Right Image */}
+				<div className="flex justify-center md:justify-end">
+					<div className="relative">
 
-				<div className="flex justify-center">
+						{/* Glow effect */}
+						<div className="absolute inset-0 bg-cyan-400/10 blur-2xl rounded-xl"></div>
 
-					<img
-						src={profile}
-						className="w-80 h-80 object-cover rounded-lg border border-gray-800 shadow-lg"
-					/>
+						<img
+							src={profile}
+							alt="Harshavarth profile"
+							className="
+                relative
+                w-72 h-72 md:w-80 md:h-80
+                object-cover
+                rounded-xl
+                border border-gray-800
+                shadow-xl
+              "
+						/>
 
+					</div>
 				</div>
 
 			</div>
-
 		</section>
 	);
 }
