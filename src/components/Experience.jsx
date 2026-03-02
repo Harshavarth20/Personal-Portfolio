@@ -15,14 +15,14 @@ function Experience() {
           </h3>
 
           <p className="text-gray-500 text-sm mb-4">
-            Voyager Valley Technologies
+            Voyager Valley Technologies | Oct 2024 – Present
           </p>
 
           <p className="text-gray-400 leading-relaxed">
-            Worked on backend services using Ruby on Rails and PostgreSQL.
-            Developed REST APIs, implemented validation systems, and contributed
-            to frontend features using React. Improved system reliability and
-            performance through debugging and optimization.
+            Started as a Junior Software Developer Intern and progressed to Junior Software Developer.
+            Developed backend services using Ruby on Rails and PostgreSQL, built REST APIs,
+            implemented validation systems, and contributed to frontend development using React.js.
+            Improved application performance through debugging and optimization.
           </p>
 
         </div>

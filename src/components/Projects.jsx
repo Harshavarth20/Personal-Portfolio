@@ -3,9 +3,17 @@ export default function Projects() {
 		{
 			title: "Developer Portfolio Website",
 			description:
-				"Designed and developed a modern portfolio using React, Vite, and Tailwind CSS with responsive layout and clean UI.",
+				"Built a responsive developer portfolio using React and Tailwind CSS. Implemented modern UI design and component-based architecture. Deployed on Vercel ensuring fast performance and accessibility.",
 			tech: ["React", "Tailwind", "Vite"],
 			github: "https://github.com/Harshavarth20/Personal-Portfolio",
+			live: "https://harshavarth-portfolio.vercel.app/"
+		},
+		{
+			title: "Ecommerce Store Application",
+			description: "Built a responsive ecommerce application with product search, filtering, sorting, and cart functionality using Next.js and React. Integrated REST API and deployed on Vercel.",
+			tech: ["Next.js", "React", "Tailwind CSS", "REST API"],
+			github: "https://github.com/Harshavarth20/Ecommerce-Store",
+			live: "https://harshavarth-ecommerce.vercel.app/"
 		},
 		{
 			title: "Expense Tracker Application",
@@ -57,14 +65,29 @@ export default function Projects() {
 								))}
 							</div>
 
-							<a
-								href={project.github}
-								target="_blank"
-								className="inline-block mt-4 text-cyan-400 hover:text-cyan-300"
-							>
-								View on GitHub →
-							</a>
+							<div className="flex justify-between items-center mt-auto pt-6">
 
+								<a
+									href={project.github}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-cyan-400 hover:text-cyan-300 font-medium transition"
+								>
+									GitHub →
+								</a>
+
+								{project.live && (
+									<a
+										href={project.live}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="px-3 py-1 border border-green-400 text-green-400 rounded hover:bg-green-400 hover:text-black transition"
+									>
+										Live Demo →
+									</a>
+								)}
+
+							</div>
 						</div>
 					))}
 
