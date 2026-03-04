@@ -6,6 +6,8 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
+import About from "./components/About";
+import Certificates from "./components/Certificates";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Navbar />
 
       <Hero />
+
+      <About />
 
       <Skills />
 
